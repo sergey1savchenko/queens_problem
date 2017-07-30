@@ -7,21 +7,21 @@ public class QueensProblem {
 	
 	public static void main(String[] args){
 
-		while (chessboard[0]<N) {							// äëÿ âñåõ ñòîëáöîâ ïîëÿ
+		while (chessboard[0]<N) {
 			
-			if (checked()){									// åñëè íà äàííûé ìîìåíò íåò ôåðçåé ïîä áîåì
+			if (checked()){	
 				
-				if (index == (N-1)) {						// åñëè ìû óæå çàïîëíèëè âñå ñòðîêè
+				if (index == (N-1)) {	
 					System.out.print(++version + ": ");
 					printResult(chessboard);
 					chessboard[index]++;
 				}
-				else {										// åñëè ðàññìîòðåëè åùå íå âñå ñòðîêè 
-					index++;								// ïåðåõîäèì íà ñëåäóþùóþ
+				else { 
+					index++;
 				}
 				
 			}
-			else {											// ïðîâåðêà íå ïðîéäåíà => ñäâèãàåì ôåðçÿ íà òåêóùåé ïîçèöèè ââåðõ
+			else {	
 				chessboard[index]++;
 			}
 			
