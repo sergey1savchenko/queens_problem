@@ -50,7 +50,7 @@ public class QueensProblem {
 		return true;
 	}
 	
-	///////////////////////////////////
+	// Print the board
 	private static void printResult(int[] tempChessboard) {
 		int j;
 		for (j = 0; j < (tempChessboard.length-1); j++){
